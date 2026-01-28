@@ -1,41 +1,80 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Donate | Cridersville Historical Society</title>
-<link rel="stylesheet" href="assets/styles.css"/>
-<script defer src="assets/site.js"></script>
-</head><body>
-<header class="site-header"><div class="wrap">
-  <div class="header-inner">
-    <div class="brand">
-      <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
-      <div class="brand-title">
-        <strong>Cridersville Historical Society</strong>
-        <span>Preserving Our Past For Future Generations</span>
-      </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Donate! • Cridersville Historical Society</title>
+  <meta name="description" content="Cridersville Historical Society — Preserving Our Heritage"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Cridersville Historical Society home">
+        <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
+        <div class="title">
+          <strong>Cridersville Historical Society</strong>
+          <span>Preserving Our Heritage</span>
+        </div>
+      </a>
+
+      <nav class="main" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Who We Are</a>
+        <a href="visit.html">Where We Are</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Resources</a>
+        <a class="donate" href="donate.html">Donate!</a>
+      </nav>
     </div>
-    <nav class="nav"><a href="index.html" class="">Home</a><a href="about.html" class="">Who We Are</a><a href="visit.html" class="">Visit</a><a href="events.html" class="">Events</a><a href="newsletters.html" class="">Newsletters</a><a href="membership.html" class="">Membership</a><a href="donate.html" class="cta">Donate</a><a href="store.html" class="">Store</a><a href="contact.html" class="">Contact</a></nav>
+
+    <div class="select-page" aria-label="Select Page">
+      <label for="pageSelect" class="small" style="color:#fff; display:block; margin-bottom:6px;">Select Page</label>
+      <select id="pageSelect">
+        <option value="index.html">Home</option>
+<option value="about.html">Who We Are</option>
+<option value="visit.html">Where We Are</option>
+<option value="events.html">Events</option>
+<option value="membership.html">Join Us!</option>
+<option value="newsletters.html">Newsletter Archive</option>
+<option value="store.html">Store</option>
+<option value="donate.html">Donate!</option>
+<option value="contact.html">Contact Us</option>
+      </select>
+    </div>
   </div>
-  <div class="mobile-row">
-    <select id="pageSelect" class="select" aria-label="Select page">
-      <option value="">Select Page…</option><option value="index.html">Home</option><option value="about.html">Who We Are</option><option value="visit.html">Visit</option><option value="events.html">Events</option><option value="newsletters.html">Newsletters</option><option value="membership.html">Membership</option><option value="donate.html">Donate</option><option value="store.html">Store</option><option value="contact.html">Contact</option>
-    </select>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="page">
+      
+<h1>Donate!</h1>
+<h2 class="tagline">Support preservation, maintenance, and education programs</h2>
+
+<div class="block">
+  <h3>Online giving</h3>
+  <p><a class="btn" href="https://givebutter.com/162Ekj" target="_blank" rel="noopener">Givebutter Donation Page</a></p>
+</div>
+
+<div class="block">
+  <h3>By mail</h3>
+  <p>Cridersville Historical Society<br/>P.O. Box 2444<br/>Cridersville, Ohio 45806</p>
+</div>
+
+    </div>
   </div>
-</div></header>
-<main class="wrap"><div class='card'><h2>Donations</h2>
-<h3>Donation method</h3>
-<p>Make membership payments to:<br/>Cridersville Historical Society, P.O. Box 2444, Cridersville, Ohio 45806<br/>Give Butter https://givebutter.com/162Ekj<br/>Tax deductible?<br/>The Historical Society is a 501(c) (3) charitable organization.<br/>Donation use statement:<br/>Unless a donation is specifically designated for a particular program or initiative, all<br/>contributions to the Cridersville Historical Society are placed into the Society’s general fund.<br/>The Board of Trustees reviews the needs of the organization and determines how donated<br/>funds can be used most effectively to support preservation efforts, facility maintenance and<br/>expansion, educational programming, and community events.</p>
-</div><div class='card'><p><a class='btn' href='https://givebutter.com/162Ekj' target='_blank' rel='noopener'>Donate via Givebutter</a></p></div></main>
-<footer class="footer"><div class="wrap">
-  <small>Cridersville, OH</small>
-  <small>Email: Cridersvillehistory@gmail.com
-Phone Number:
-419-733-0568
-Mailing Address / PO Box:
-Museum address: 111 W Sugar St, Cridersville, OH 45806
-P.O. Box 2444
-Who receives website messages?
-Board members · Phone: </small>
-</div></footer>
-</body></html>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Cridersville Historical Society</strong></div>
+    <div>111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • <a href="mailto:cridersvillehistory@gmail.com">cridersvillehistory@gmail.com</a></div>
+    <div>© <span id="year"></span> Cridersville Historical Society</div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

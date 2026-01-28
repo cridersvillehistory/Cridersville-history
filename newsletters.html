@@ -1,40 +1,74 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Newsletters | Cridersville Historical Society</title>
-<link rel="stylesheet" href="assets/styles.css"/>
-<script defer src="assets/site.js"></script>
-</head><body>
-<header class="site-header"><div class="wrap">
-  <div class="header-inner">
-    <div class="brand">
-      <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
-      <div class="brand-title">
-        <strong>Cridersville Historical Society</strong>
-        <span>Preserving Our Past For Future Generations</span>
-      </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Newsletter Archive • Cridersville Historical Society</title>
+  <meta name="description" content="Cridersville Historical Society — Preserving Our Heritage"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Cridersville Historical Society home">
+        <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
+        <div class="title">
+          <strong>Cridersville Historical Society</strong>
+          <span>Preserving Our Heritage</span>
+        </div>
+      </a>
+
+      <nav class="main" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Who We Are</a>
+        <a href="visit.html">Where We Are</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Resources</a>
+        <a class="donate" href="donate.html">Donate!</a>
+      </nav>
     </div>
-    <nav class="nav"><a href="index.html" class="">Home</a><a href="about.html" class="">Who We Are</a><a href="visit.html" class="">Visit</a><a href="events.html" class="">Events</a><a href="newsletters.html" class="">Newsletters</a><a href="membership.html" class="">Membership</a><a href="donate.html" class="cta">Donate</a><a href="store.html" class="">Store</a><a href="contact.html" class="">Contact</a></nav>
+
+    <div class="select-page" aria-label="Select Page">
+      <label for="pageSelect" class="small" style="color:#fff; display:block; margin-bottom:6px;">Select Page</label>
+      <select id="pageSelect">
+        <option value="index.html">Home</option>
+<option value="about.html">Who We Are</option>
+<option value="visit.html">Where We Are</option>
+<option value="events.html">Events</option>
+<option value="membership.html">Join Us!</option>
+<option value="newsletters.html">Newsletter Archive</option>
+<option value="store.html">Store</option>
+<option value="donate.html">Donate!</option>
+<option value="contact.html">Contact Us</option>
+      </select>
+    </div>
   </div>
-  <div class="mobile-row">
-    <select id="pageSelect" class="select" aria-label="Select page">
-      <option value="">Select Page…</option><option value="index.html">Home</option><option value="about.html">Who We Are</option><option value="visit.html">Visit</option><option value="events.html">Events</option><option value="newsletters.html">Newsletters</option><option value="membership.html">Membership</option><option value="donate.html">Donate</option><option value="store.html">Store</option><option value="contact.html">Contact</option>
-    </select>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="page">
+      
+<h1>Newsletter Archive</h1>
+<h2 class="tagline">PDF archive (ready for uploads)</h2>
+<p class="small">Upload PDFs to a <code>newsletters</code> folder and link them here.</p>
+<ul>
+  <li><a href="#" onclick="return false;">2025 • Spring (PDF)</a></li>
+</ul>
+
+    </div>
   </div>
-</div></header>
-<main class="wrap"><div class='card'><h2>Newsletter Archive</h2>
-<p>Will update at a later date</p>
-</div></main>
-<footer class="footer"><div class="wrap">
-  <small>Cridersville, OH</small>
-  <small>Email: Cridersvillehistory@gmail.com
-Phone Number:
-419-733-0568
-Mailing Address / PO Box:
-Museum address: 111 W Sugar St, Cridersville, OH 45806
-P.O. Box 2444
-Who receives website messages?
-Board members · Phone: </small>
-</div></footer>
-</body></html>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Cridersville Historical Society</strong></div>
+    <div>111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • <a href="mailto:cridersvillehistory@gmail.com">cridersvillehistory@gmail.com</a></div>
+    <div>© <span id="year"></span> Cridersville Historical Society</div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

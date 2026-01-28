@@ -1,45 +1,82 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Visit | Cridersville Historical Society</title>
-<link rel="stylesheet" href="assets/styles.css"/>
-<script defer src="assets/site.js"></script>
-</head><body>
-<header class="site-header"><div class="wrap">
-  <div class="header-inner">
-    <div class="brand">
-      <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
-      <div class="brand-title">
-        <strong>Cridersville Historical Society</strong>
-        <span>Preserving Our Past For Future Generations</span>
-      </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Where We Are • Cridersville Historical Society</title>
+  <meta name="description" content="Cridersville Historical Society — Preserving Our Heritage"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Cridersville Historical Society home">
+        <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
+        <div class="title">
+          <strong>Cridersville Historical Society</strong>
+          <span>Preserving Our Heritage</span>
+        </div>
+      </a>
+
+      <nav class="main" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Who We Are</a>
+        <a href="visit.html">Where We Are</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Resources</a>
+        <a class="donate" href="donate.html">Donate!</a>
+      </nav>
     </div>
-    <nav class="nav"><a href="index.html" class="">Home</a><a href="about.html" class="">Who We Are</a><a href="visit.html" class="">Visit</a><a href="events.html" class="">Events</a><a href="newsletters.html" class="">Newsletters</a><a href="membership.html" class="">Membership</a><a href="donate.html" class="cta">Donate</a><a href="store.html" class="">Store</a><a href="contact.html" class="">Contact</a></nav>
+
+    <div class="select-page" aria-label="Select Page">
+      <label for="pageSelect" class="small" style="color:#fff; display:block; margin-bottom:6px;">Select Page</label>
+      <select id="pageSelect">
+        <option value="index.html">Home</option>
+<option value="about.html">Who We Are</option>
+<option value="visit.html">Where We Are</option>
+<option value="events.html">Events</option>
+<option value="membership.html">Join Us!</option>
+<option value="newsletters.html">Newsletter Archive</option>
+<option value="store.html">Store</option>
+<option value="donate.html">Donate!</option>
+<option value="contact.html">Contact Us</option>
+      </select>
+    </div>
   </div>
-  <div class="mobile-row">
-    <select id="pageSelect" class="select" aria-label="Select page">
-      <option value="">Select Page…</option><option value="index.html">Home</option><option value="about.html">Who We Are</option><option value="visit.html">Visit</option><option value="events.html">Events</option><option value="newsletters.html">Newsletters</option><option value="membership.html">Membership</option><option value="donate.html">Donate</option><option value="store.html">Store</option><option value="contact.html">Contact</option>
-    </select>
-  </div>
-</div></header>
-<main class="wrap"><div class='card'><h2>Where We Are (repeat per location)</h2>
-<h3>Location Name</h3>
-<p>The Cridersville Local History Museum<br/>Address:<br/>111 W. Sugar Street, Cridersville, Ohio 45806<br/>Hours / Access:<br/>Second and Fourth Sunday of each month April through October<br/>1:00-4:00 p.m.<br/>Parking info:<br/>Street parking and behind museum parking<br/>Description:<br/>The Cridersville Local History Museum has grown into a space filled with stories, exhibits,<br/>and educational experiences that are actively shared with the community. Our current</p>
-<p>museum layout features themed exhibit areas that guide visitors through Cridersville’s<br/>history, from early settlement and industry to everyday life and community traditions. The<br/>museum regularly welcomes visitors of all ages, hosts school tours and youth groups, and<br/>relies on trained volunteers to help interpret exhibits and share local stories.<br/>Location Name:<br/>Bowsher Log Home<br/>Address:<br/>East Main Street Cridersville<br/>Parking info:<br/>Parking at Cridersville Health Care Center 603 E. Main Street<br/>Description:<br/>The Bowsher Log Cabin is a restored 19th-century log home that reflects the early<br/>settlement and craftsmanship of the Cridersville area. Donated by the Bowsher family, the<br/>cabin now serves as a historic landmark and educational space, offering visitors a glimpse<br/>into daily life during the village’s early years and providing a tangible connection to<br/>Cridersville’s pioneer past.</p>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="page">
+      
+<h1>Where We Are</h1>
+<h2 class="tagline">Visit our museum and historic cabin</h2>
+
+<div class="block" id="museum">
+  <h3>Cridersville Local History Museum</h3>
+  <p><strong>111 W. Sugar Street, Cridersville, OH 45806</strong><br/>
+  Open: Second and Fourth Sunday (April–October), 1:00–4:00 p.m.</p>
 </div>
-<div class='card'><h2>What To See (Exhibits)</h2>
-<p>Will Update at a later date</p>
-</div></main>
-<footer class="footer"><div class="wrap">
-  <small>Cridersville, OH</small>
-  <small>Email: Cridersvillehistory@gmail.com
-Phone Number:
-419-733-0568
-Mailing Address / PO Box:
-Museum address: 111 W Sugar St, Cridersville, OH 45806
-P.O. Box 2444
-Who receives website messages?
-Board members · Phone: </small>
-</div></footer>
-</body></html>
+
+<div class="block" id="bowsher">
+  <h3>Bowsher Log Home</h3>
+  <p><strong>East Main Street, Cridersville, OH</strong><br/>
+  Parking: Cridersville Health Care Center, 603 E. Main Street</p>
+</div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Cridersville Historical Society</strong></div>
+    <div>111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • <a href="mailto:cridersvillehistory@gmail.com">cridersvillehistory@gmail.com</a></div>
+    <div>© <span id="year"></span> Cridersville Historical Society</div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
