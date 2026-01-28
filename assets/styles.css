@@ -1,0 +1,133 @@
+
+:root{
+  --paper:#f6f1e6;
+  --ink:#2a241b;
+  --muted:#6a5f52;
+  --border:#d8cbb5;
+  --accent:#2f4a3a;
+  --accent2:#7a4a2a;
+  --card:#fffdf8;
+  --shadow:0 6px 18px rgba(0,0,0,.08);
+  --radius:12px;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color:var(--ink);
+  background:linear-gradient(#fbf7ef, var(--paper));
+  line-height:1.6;
+}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+.site-header{
+  background:linear-gradient(180deg, #fdfaf3, #f3ead8);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  display:flex; gap:14px; align-items:center; justify-content:space-between;
+  padding:14px 0;
+}
+.brand{display:flex; align-items:center; gap:14px; min-width:260px}
+.brand img{
+  width:70px; height:70px; object-fit:contain;
+  border-radius:12px;
+  background:var(--card);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  padding:6px;
+}
+.brand-title strong{font-size:1.35rem; letter-spacing:.3px}
+.brand-title span{color:var(--muted); font-size:.95rem}
+.nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:flex-end}
+.nav a{padding:8px 10px; border-radius:10px}
+.nav a:hover{background:rgba(47,74,58,.08)}
+.nav a.cta{background:var(--accent); color:#fff}
+.nav a.cta:hover{background:#243b2f; text-decoration:none}
+.mobile-row{display:none; padding:0 0 14px 0}
+.select{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+  font-size:1rem;
+}
+.hero{padding:18px 0 10px 0}
+.hero-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.hero-banner{
+  background:linear-gradient(90deg, rgba(47,74,58,.92), rgba(122,74,42,.88));
+  color:#fff;
+  padding:22px 18px;
+}
+.hero-banner h1{margin:0 0 6px 0; font-size:2rem; line-height:1.15}
+.hero-banner p{margin:0; opacity:.95; max-width:70ch}
+.hero-body{
+  padding:18px;
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap:18px;
+}
+.hero-body img{
+  width:100%;
+  max-height:360px;
+  object-fit:contain;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:12px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:16px;
+  margin:14px 0;
+}
+.footer{
+  border-top:1px solid var(--border);
+  background:#f3ead8;
+  color:var(--muted);
+  padding:18px 0;
+  margin-top:22px;
+}
+.footer small{display:block}
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  padding:10px 12px;
+  border-radius:12px;
+  text-decoration:none;
+}
+.btn:hover{background:#243b2f; text-decoration:none}
+.btn.secondary{background:var(--accent2)}
+.btn.secondary:hover{background:#623a20}
+pre.worksheet{
+  white-space:pre-wrap;
+  word-break:break-word;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px;
+  box-shadow:var(--shadow);
+  margin:10px 0 0 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size:.92rem;
+  color:#1f1a14;
+}
+@media (max-width: 860px){
+  .hero-body{grid-template-columns:1fr}
+  .nav{display:none}
+  .mobile-row{display:block}
+  .brand{min-width:unset}
+}
