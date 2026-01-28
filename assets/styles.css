@@ -35,22 +35,3 @@ hr{border:none;border-top:1px solid var(--border);margin:16px 0}
 .footer{border-top:1px solid var(--border);background:#f2e7d2;color:var(--muted);padding:18px 0}.footer small{display:block}
 ul{margin:10px 0 0 18px}
 @media (max-width:920px){.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.nav{display:none}.mobile-row{display:block}}
-/* Make homepage mission statement smaller */
-.hero p {
-  font-size: .5rem;
-  line-height: 1.5;
-  max-width: 650px;
-}
-/* FIX: Homepage welcome paragraph too large */
-.hero p {
-  font-size: .5rem !important;
-  line-height: 1.55;
-  font-weight: normal;
-  max-width: 720px;
-}
-
-/* If the welcome text is accidentally inside a heading */
-.hero h1 + p {
-  font-size: .5rem !important;
-  font-weight: normal;
-}
