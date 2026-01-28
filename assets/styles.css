@@ -32,13 +32,13 @@ ul{margin:10px 0 0 18px}
 @media (max-width:920px){.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.nav{display:none}.mobile-row{display:block}}
 /* Make homepage mission statement smaller */
 .hero p {
-  font-size: .9rem;
+  font-size: .5rem;
   line-height: 1.5;
   max-width: 650px;
 }
 /* FIX: Homepage welcome paragraph too large */
 .hero p {
-  font-size: 1rem !important;
+  font-size: .5rem !important;
   line-height: 1.55;
   font-weight: normal;
   max-width: 720px;
@@ -46,6 +46,6 @@ ul{margin:10px 0 0 18px}
 
 /* If the welcome text is accidentally inside a heading */
 .hero h1 + p {
-  font-size: 1rem !important;
+  font-size: .5rem !important;
   font-weight: normal;
 }
