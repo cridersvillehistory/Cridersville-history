@@ -31,3 +31,4 @@ hr{border:none;border-top:1px solid var(--border);margin:16px 0}
 .footer{border-top:1px solid var(--border);background:#f2e7d2;color:var(--muted);padding:18px 0}.footer small{display:block}
 ul{margin:10px 0 0 18px}
 @media (max-width:920px){.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.nav{display:none}.mobile-row{display:block}}
+body { background: pink !important; }
