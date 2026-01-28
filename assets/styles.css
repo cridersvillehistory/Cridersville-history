@@ -53,3 +53,11 @@ ul{margin:10px 0 0 18px}
   margin: 0 auto;
   display: block;
 }
+  /* FORCE hero logo size (override anything else) */
+.hero-card img {
+  width: 180px !important;
+  max-width: 180px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
