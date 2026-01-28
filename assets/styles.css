@@ -32,7 +32,7 @@ ul{margin:10px 0 0 18px}
 @media (max-width:920px){.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.nav{display:none}.mobile-row{display:block}}
 /* Make homepage mission statement smaller */
 .hero p {
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.5;
   max-width: 650px;
 }
