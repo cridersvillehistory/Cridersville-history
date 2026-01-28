@@ -1,144 +1,83 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Membership • Cridersville Historical Society</title>
-  <meta name="description" content="Cridersville Historical Society" />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Join Us! • Cridersville Historical Society</title>
+  <meta name="description" content="Cridersville Historical Society — Preserving Our Heritage"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <div class="top">
+    <div class="topbar">
       <a class="brand" href="index.html" aria-label="Cridersville Historical Society home">
-        <div class="seal" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 20h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-        <path d="M7 20V10l5-4 5 4v10" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M10 20v-6h4v6" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-      </svg>
-    </div>
-        <div class="brand-title">
+        <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
+        <div class="title">
           <strong>Cridersville Historical Society</strong>
-          <span>Cridersville, Ohio</span>
+          <span>Preserving Our Heritage</span>
         </div>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="" href="index.html">Home</a>
-        <a class="" href="about.html">Who We Are</a>
-
-        <div class="dd" aria-expanded="false">
-          <button type="button" aria-haspopup="true" aria-expanded="false">
-            Visit
-            <svg class="caret" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="dd-menu" role="menu" aria-label="Visit">
-            <a role="menuitem" href="visit.html#museum">Local History Museum</a>
-            <a role="menuitem" href="visit.html#bowsher">Bowsher Log Home</a>
-          </div>
-        </div>
-
-        <a class="" href="events.html">Events</a>
-
-        <div class="dd" aria-expanded="false">
-          <button type="button" aria-haspopup="true" aria-expanded="false">
-            Resources
-            <svg class="caret" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="dd-menu" role="menu" aria-label="Resources">
-            <a role="menuitem" href="membership.html">Membership</a>
-            <a role="menuitem" href="store.html">Gift Shop</a>
-            <a role="menuitem" href="newsletters.html">Newsletter Archive</a>
-          </div>
-        </div>
-
-        <a class="donate " href="donate.html">Donate</a>
-        <a class="" href="contact.html">Contact</a>
+      <nav class="main" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Who We Are</a>
+        <a href="visit.html">Where We Are</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Resources</a>
+        <a class="donate" href="donate.html">Donate!</a>
       </nav>
-
-      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
     </div>
 
-    <div class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">Who We Are</a>
-      <button type="button" id="mWhere">Visit <span aria-hidden="true">▾</span></button>
-      <div class="mobile-sub" id="mWhereSub">
-        <a href="visit.html#museum">Local History Museum</a>
-        <a href="visit.html#bowsher">Bowsher Log Home</a>
-      </div>
-      <a href="events.html">Events</a>
-      <button type="button" id="mRes">Resources <span aria-hidden="true">▾</span></button>
-      <div class="mobile-sub" id="mResSub">
-        <a href="membership.html">Membership</a>
-        <a href="store.html">Gift Shop</a>
-        <a href="newsletters.html">Newsletter Archive</a>
-      </div>
-      <a class="donate" href="donate.html" style="display:block; text-align:center; margin-top:10px;">Donate</a>
-      <a href="contact.html">Contact</a>
+    <div class="select-page" aria-label="Select Page">
+      <label for="pageSelect" class="small" style="color:#fff; display:block; margin-bottom:6px;">Select Page</label>
+      <select id="pageSelect">
+        <option value="index.html">Home</option>
+<option value="about.html">Who We Are</option>
+<option value="visit.html">Where We Are</option>
+<option value="events.html">Events</option>
+<option value="membership.html">Join Us!</option>
+<option value="newsletters.html">Newsletter Archive</option>
+<option value="store.html">Store</option>
+<option value="donate.html">Donate!</option>
+<option value="contact.html">Contact Us</option>
+      </select>
     </div>
   </div>
 </header>
 
-
 <main>
   <div class="wrap">
-    <div class="grid">
-      <section class="card">
-        <h2>Membership</h2>
-        <p>Becoming a member of the Cridersville Historical Society is a meaningful way to help preserve our local heritage for future generations. Through museum exhibits, public education programs, and activities with local students, our members support the work of saving and sharing Cridersville’s history. Membership is open to individuals, students, families, patrons, and businesses, with affordable annual options available. It is important work—and it is fun.</p>
+    <div class="page">
+      
+<h1>Join Us!</h1>
+<h2 class="tagline">Membership supports preservation and education</h2>
 
-        <hr/>
-        <h3>Membership Levels</h3>
-        <table>
-          <thead><tr><th>Type</th><th>Annual Cost</th></tr></thead>
-          <tbody>
-            <tr><td>Individual</td><td>$10</td></tr><tr><td>Student</td><td>$5</td></tr><tr><td>Dual (Couple)</td><td>$20</td></tr><tr><td>Patron</td><td>$50, $100, or $250</td></tr><tr><td>Corporate</td><td>$100 or $250</td></tr>
-          </tbody>
-        </table>
+<div class="block">
+  <h3>Membership Levels</h3>
+  <ul>
+    <li>Individual — $10</li>
+    <li>Student — $5</li>
+    <li>Dual (Couple) — $20</li>
+    <li>Patron — $50, $100, or $250</li>
+    <li>Corporate — $100 or $250</li>
+  </ul>
+</div>
 
-        <hr/>
-        <h3>How to Join</h3>
-        <p class="muted"><strong>Mail payments to:</strong><br>
-        Cridersville Historical Society<br>
-        P.O. Box 2444<br>
-        Cridersville, Ohio 45806</p>
+<div class="block">
+  <h3>Mail payments to</h3>
+  <p>Cridersville Historical Society<br/>P.O. Box 2444<br/>Cridersville, Ohio 45806</p>
+</div>
 
-        <a class="pill" href="contact.html">Questions about membership? →</a>
-      </section>
-
-      <aside class="card">
-        <h3>Support Our Work</h3>
-        <p class="muted">Memberships and donations support preservation, educational programming, and community events.</p>
-        <a class="btn" href="donate.html">Donate</a>
-      </aside>
     </div>
   </div>
 </main>
 
-
 <footer>
   <div class="wrap">
-    <div class="foot">
-      <div>
-        <strong style="color: var(--ink);">Cridersville Historical Society</strong>
-        <div class="small">111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • cridersvillehistory@gmail.com</div>
-      </div>
-      <div class="small">
-        <div>© <span id="year"></span> Cridersville Historical Society</div>
-        <div>Hosted on GitHub Pages (free static hosting).</div>
-      </div>
-    </div>
+    <div><strong>Cridersville Historical Society</strong></div>
+    <div>111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • <a href="mailto:cridersvillehistory@gmail.com">cridersvillehistory@gmail.com</a></div>
+    <div>© <span id="year"></span> Cridersville Historical Society</div>
   </div>
 </footer>
 

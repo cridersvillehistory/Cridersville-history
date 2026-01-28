@@ -1,141 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Newsletter Archive • Cridersville Historical Society</title>
-  <meta name="description" content="Cridersville Historical Society" />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Cridersville Historical Society — Preserving Our Heritage"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <div class="top">
+    <div class="topbar">
       <a class="brand" href="index.html" aria-label="Cridersville Historical Society home">
-        <div class="seal" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 20h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-        <path d="M7 20V10l5-4 5 4v10" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M10 20v-6h4v6" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-      </svg>
-    </div>
-        <div class="brand-title">
+        <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
+        <div class="title">
           <strong>Cridersville Historical Society</strong>
-          <span>Cridersville, Ohio</span>
+          <span>Preserving Our Heritage</span>
         </div>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="" href="index.html">Home</a>
-        <a class="" href="about.html">Who We Are</a>
-
-        <div class="dd" aria-expanded="false">
-          <button type="button" aria-haspopup="true" aria-expanded="false">
-            Visit
-            <svg class="caret" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="dd-menu" role="menu" aria-label="Visit">
-            <a role="menuitem" href="visit.html#museum">Local History Museum</a>
-            <a role="menuitem" href="visit.html#bowsher">Bowsher Log Home</a>
-          </div>
-        </div>
-
-        <a class="" href="events.html">Events</a>
-
-        <div class="dd" aria-expanded="false">
-          <button type="button" aria-haspopup="true" aria-expanded="false">
-            Resources
-            <svg class="caret" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="dd-menu" role="menu" aria-label="Resources">
-            <a role="menuitem" href="membership.html">Membership</a>
-            <a role="menuitem" href="store.html">Gift Shop</a>
-            <a role="menuitem" href="newsletters.html">Newsletter Archive</a>
-          </div>
-        </div>
-
-        <a class="donate " href="donate.html">Donate</a>
-        <a class="" href="contact.html">Contact</a>
+      <nav class="main" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Who We Are</a>
+        <a href="visit.html">Where We Are</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Resources</a>
+        <a class="donate" href="donate.html">Donate!</a>
       </nav>
-
-      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
     </div>
 
-    <div class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">Who We Are</a>
-      <button type="button" id="mWhere">Visit <span aria-hidden="true">▾</span></button>
-      <div class="mobile-sub" id="mWhereSub">
-        <a href="visit.html#museum">Local History Museum</a>
-        <a href="visit.html#bowsher">Bowsher Log Home</a>
-      </div>
-      <a href="events.html">Events</a>
-      <button type="button" id="mRes">Resources <span aria-hidden="true">▾</span></button>
-      <div class="mobile-sub" id="mResSub">
-        <a href="membership.html">Membership</a>
-        <a href="store.html">Gift Shop</a>
-        <a href="newsletters.html">Newsletter Archive</a>
-      </div>
-      <a class="donate" href="donate.html" style="display:block; text-align:center; margin-top:10px;">Donate</a>
-      <a href="contact.html">Contact</a>
+    <div class="select-page" aria-label="Select Page">
+      <label for="pageSelect" class="small" style="color:#fff; display:block; margin-bottom:6px;">Select Page</label>
+      <select id="pageSelect">
+        <option value="index.html">Home</option>
+<option value="about.html">Who We Are</option>
+<option value="visit.html">Where We Are</option>
+<option value="events.html">Events</option>
+<option value="membership.html">Join Us!</option>
+<option value="newsletters.html">Newsletter Archive</option>
+<option value="store.html">Store</option>
+<option value="donate.html">Donate!</option>
+<option value="contact.html">Contact Us</option>
+      </select>
     </div>
   </div>
 </header>
 
-
 <main>
   <div class="wrap">
-    <div class="grid">
-      <section class="card">
-        <h2>Newsletter Archive</h2>
-        <p class="muted">This archive is ready for PDF uploads.</p>
+    <div class="page">
+      
+<h1>Newsletter Archive</h1>
+<h2 class="tagline">PDF archive (ready for uploads)</h2>
+<p class="small">Upload PDFs to a <code>newsletters</code> folder and link them here.</p>
+<ul>
+  <li><a href="#" onclick="return false;">2025 • Spring (PDF)</a></li>
+</ul>
 
-        <hr/>
-        <h3>How to add newsletters</h3>
-        <ol>
-          <li>Create a folder named <code>newsletters</code> in the repository.</li>
-          <li>Upload your PDFs into that folder (example: <code>2025_Spring.pdf</code>).</li>
-          <li>Edit this page and add a link to each PDF.</li>
-        </ol>
-
-        <hr/>
-        <h3>Archive (sample)</h3>
-        <ul>
-          <li><a href="#" onclick="return false;">2025 • Spring (PDF)</a></li>
-          <li><a href="#" onclick="return false;">2025 • Fall (PDF)</a></li>
-        </ul>
-      </section>
-
-      <aside class="card">
-        <h3>Have a newsletter to share?</h3>
-        <p class="muted small">Email PDFs to the board or the website administrator to upload.</p>
-        <a class="btn secondary" href="contact.html">Contact</a>
-      </aside>
     </div>
   </div>
 </main>
 
-
 <footer>
   <div class="wrap">
-    <div class="foot">
-      <div>
-        <strong style="color: var(--ink);">Cridersville Historical Society</strong>
-        <div class="small">111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • cridersvillehistory@gmail.com</div>
-      </div>
-      <div class="small">
-        <div>© <span id="year"></span> Cridersville Historical Society</div>
-        <div>Hosted on GitHub Pages (free static hosting).</div>
-      </div>
-    </div>
+    <div><strong>Cridersville Historical Society</strong></div>
+    <div>111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • <a href="mailto:cridersvillehistory@gmail.com">cridersvillehistory@gmail.com</a></div>
+    <div>© <span id="year"></span> Cridersville Historical Society</div>
   </div>
 </footer>
 

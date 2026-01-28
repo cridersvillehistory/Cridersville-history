@@ -1,172 +1,130 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Home • Cridersville Historical Society</title>
-  <meta name="description" content="Cridersville Historical Society" />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Cridersville Historical Society — Preserving Our Heritage"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <div class="top">
+    <div class="topbar">
       <a class="brand" href="index.html" aria-label="Cridersville Historical Society home">
-        <div class="seal" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 20h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-        <path d="M7 20V10l5-4 5 4v10" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M10 20v-6h4v6" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-      </svg>
-    </div>
-        <div class="brand-title">
+        <img src="assets/logo.png" alt="Cridersville Historical Society logo"/>
+        <div class="title">
           <strong>Cridersville Historical Society</strong>
-          <span>Cridersville, Ohio</span>
+          <span>Preserving Our Heritage</span>
         </div>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="active" href="index.html">Home</a>
-        <a class="" href="about.html">Who We Are</a>
-
-        <div class="dd" aria-expanded="false">
-          <button type="button" aria-haspopup="true" aria-expanded="false">
-            Visit
-            <svg class="caret" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="dd-menu" role="menu" aria-label="Visit">
-            <a role="menuitem" href="visit.html#museum">Local History Museum</a>
-            <a role="menuitem" href="visit.html#bowsher">Bowsher Log Home</a>
-          </div>
-        </div>
-
-        <a class="" href="events.html">Events</a>
-
-        <div class="dd" aria-expanded="false">
-          <button type="button" aria-haspopup="true" aria-expanded="false">
-            Resources
-            <svg class="caret" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="dd-menu" role="menu" aria-label="Resources">
-            <a role="menuitem" href="membership.html">Membership</a>
-            <a role="menuitem" href="store.html">Gift Shop</a>
-            <a role="menuitem" href="newsletters.html">Newsletter Archive</a>
-          </div>
-        </div>
-
-        <a class="donate " href="donate.html">Donate</a>
-        <a class="" href="contact.html">Contact</a>
+      <nav class="main" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Who We Are</a>
+        <a href="visit.html">Where We Are</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Resources</a>
+        <a class="donate" href="donate.html">Donate!</a>
       </nav>
-
-      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
     </div>
 
-    <div class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">Who We Are</a>
-      <button type="button" id="mWhere">Visit <span aria-hidden="true">▾</span></button>
-      <div class="mobile-sub" id="mWhereSub">
-        <a href="visit.html#museum">Local History Museum</a>
-        <a href="visit.html#bowsher">Bowsher Log Home</a>
-      </div>
-      <a href="events.html">Events</a>
-      <button type="button" id="mRes">Resources <span aria-hidden="true">▾</span></button>
-      <div class="mobile-sub" id="mResSub">
-        <a href="membership.html">Membership</a>
-        <a href="store.html">Gift Shop</a>
-        <a href="newsletters.html">Newsletter Archive</a>
-      </div>
-      <a class="donate" href="donate.html" style="display:block; text-align:center; margin-top:10px;">Donate</a>
-      <a href="contact.html">Contact</a>
+    <div class="select-page" aria-label="Select Page">
+      <label for="pageSelect" class="small" style="color:#fff; display:block; margin-bottom:6px;">Select Page</label>
+      <select id="pageSelect">
+        <option value="index.html">Home</option>
+<option value="about.html">Who We Are</option>
+<option value="visit.html">Where We Are</option>
+<option value="events.html">Events</option>
+<option value="membership.html">Join Us!</option>
+<option value="newsletters.html">Newsletter Archive</option>
+<option value="store.html">Store</option>
+<option value="donate.html">Donate!</option>
+<option value="contact.html">Contact Us</option>
+      </select>
     </div>
   </div>
 </header>
 
-
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-card">
-      <div class="hero-media" role="img" aria-label="Historic photo banner">
-        <h1>Preserving Our Past For Future Generations</h1>
-      </div>
-      <div class="hero-body">
-        <div class="kicker">Welcome</div>
-        <p>Welcome to the Cridersville Historical Society, where local history comes to life through community, tradition, and shared experiences. Our Local History Museum is open to the public on the second and fourth Sundays from April through October, and throughout the year we host a variety of special events, open houses, and fundraisers that bring people together while celebrating Cridersville’s past. From school tours and youth programs to seasonal events at the Bowsher Log Home and museum, we invite you to explore, learn, and enjoy the stories that make our community unique.</p>
-        <div class="callout small">
-          <strong>Museum Hours:</strong> Second and Fourth Sunday of each month (April–October), 1:00–4:00 p.m.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <main>
   <div class="wrap">
-    <div class="grid">
-      <section class="card">
-        <h2>Visit</h2>
-        <p class="muted">We operate two historic sites in the heart of Cridersville.</p>
-        <div class="callout">
-          <div class="badge">Local History Museum</div>
-          <p class="muted" style="margin:8px 0 0;">111 W. Sugar Street, Cridersville, OH 45806<br><strong>Open:</strong> Second and Fourth Sunday of each month (April–October), 1:00–4:00 p.m.</p>
-          <a class="pill" href="visit.html#museum">Plan your visit →</a>
-        </div>
-        <div style="height:10px"></div>
-        <div class="callout">
-          <div class="badge">Bowsher Log Home</div>
-          <p class="muted" style="margin:8px 0 0;">East Main Street, Cridersville, OH<br><strong>Parking:</strong> Parking at Cridersville Health Care Center, 603 E. Main Street</p>
-          <a class="pill" href="visit.html#bowsher">Learn about the cabin →</a>
-        </div>
-      </section>
+    <div class="page">
+      
+<h1>Home</h1>
+<h2 class="tagline">Preserving and sharing the history of Cridersville for Today and for Tomorrow</h2>
 
-      <aside class="card">
-        <h3>Contact</h3>
-        <p class="muted small"><strong>Email:</strong> cridersvillehistory@gmail.com<br><strong>Phone:</strong> (419) 733-0568<br><strong>Museum:</strong> 111 W. Sugar St, Cridersville, OH 45806<br><strong>Mailing:</strong> P.O. Box 2444</p>
-        <a class="btn secondary" href="contact.html">Send a message</a>
+<div class="hero-img">
+  <img src="assets/logo.png" alt="Cridersville Historical Society emblem"/>
+</div>
 
-        <hr/>
-        <h3>Donate</h3>
-        <p class="muted">Your support helps preservation, maintenance, and education programs.</p>
-        <a class="btn" href="donate.html">Donate</a>
-      </aside>
+<div class="kicker">Welcome!</div>
+<p>
+The Cridersville Historical Society preserves Cridersville’s heritage through museum exhibits, educational programs,
+community events, and stewardship of historic places.
+</p>
+<p>
+Established in 1987 when the Bowsher Family donated the restored Daniel and Catherine Bowsher Log Home, the Society later acquired the former EUB Church on W. Sugar Street to expand space for artifacts, photographs, and documents.
+</p>
 
-      <section class="card">
-        <h2>Who We Are</h2>
-        <p>The Cridersville Historical Society was established in 1987 when the Bowsher Family donated the fully restored Daniel and Catherine Bowsher Log Home on East Main Street. The society soon realized it needed more space to tell the many stories of Cridersville’s past. In 1990, it purchased the former EUB Church on W. Sugar Street. Over the years, it has been given many remarkable artifacts, photographs, and documents that tell the stories of Cridersville’s history in our Timeline Gallery.</p>
-        <p class="muted"><strong>Founded:</strong> 1987 • <strong>Nonprofit:</strong> 501(c)(3)</p>
-        <a class="pill" href="about.html">Meet the Society →</a>
-      </section>
+<div class="two-col">
+  <div class="block">
+    <h3>Museum Hours</h3>
+    <p><strong>Second and Fourth Sunday (April–October), 1:00–4:00 p.m.</strong><br/>
+    111 W. Sugar Street, Cridersville, OH 45806</p>
+    <p><a class="btn" href="visit.html#museum">Plan a Visit</a></p>
+  </div>
 
-      <section class="card">
-        <h2>Upcoming Events</h2>
-        <p class="muted">Dates and details will be posted as they are scheduled.</p>
-        <a class="btn secondary" href="events.html">View events</a>
-      </section>
+  <div class="block">
+    <h3>Bowsher Log Home</h3>
+    <p><strong>East Main Street, Cridersville, OH</strong><br/>
+    Parking: Cridersville Health Care Center, 603 E. Main Street</p>
+    <p><a class="btn secondary" href="visit.html#bowsher">Learn More</a></p>
+  </div>
+</div>
+
+<hr/>
+
+<h2>Facebook</h2>
+<p>
+Check us out on Facebook:
+<a id="fbLink" href="https://www.facebook.com/REPLACE_WITH_YOUR_PAGE" target="_blank" rel="noopener">Cridersville Historical Society</a>.
+</p>
+
+<div class="block">
+  <h3>Facebook Feed (optional embed)</h3>
+  <p class="small">To show the feed, replace <code>REPLACE_WITH_YOUR_PAGE</code> below with your real Facebook Page URL (encoded part can stay the same pattern).</p>
+  <iframe
+    title="Facebook Page"
+    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FREPLACE_WITH_YOUR_PAGE&tabs=timeline&width=500&height=520&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"
+    width="100%" height="520" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+  </iframe>
+</div>
+
+<hr/>
+
+<h2>Contact Us</h2>
+<div class="block" id="contact">
+  <p><strong>Email:</strong> <a href="mailto:cridersvillehistory@gmail.com">cridersvillehistory@gmail.com</a><br/>
+     <strong>Phone:</strong> (419) 733-0568</p>
+  <p><a class="btn secondary" href="contact.html">Contact Page</a></p>
+</div>
+
+<hr/>
+
+<h2>Donate today!</h2>
+<p>Your support helps preservation, maintenance, and education programs.</p>
+<p><a class="btn" href="donate.html">Donate</a></p>
+
     </div>
   </div>
 </main>
 
-
 <footer>
   <div class="wrap">
-    <div class="foot">
-      <div>
-        <strong style="color: var(--ink);">Cridersville Historical Society</strong>
-        <div class="small">111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • cridersvillehistory@gmail.com</div>
-      </div>
-      <div class="small">
-        <div>© <span id="year"></span> Cridersville Historical Society</div>
-        <div>Hosted on GitHub Pages (free static hosting).</div>
-      </div>
-    </div>
+    <div><strong>Cridersville Historical Society</strong></div>
+    <div>111 W. Sugar St, Cridersville, OH 45806 • (419) 733-0568 • <a href="mailto:cridersvillehistory@gmail.com">cridersvillehistory@gmail.com</a></div>
+    <div>© <span id="year"></span> Cridersville Historical Society</div>
   </div>
 </footer>
 
