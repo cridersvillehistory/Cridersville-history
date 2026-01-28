@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+<defs>
+  <linearGradient id="g" x1="0" x2="1">
+    <stop offset="0" stop-color="#6b4b2a"/>
+    <stop offset="1" stop-color="#35524a"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<text x="80" y="140" font-size="64" font-family="Arial" fill="rgba(255,255,255,.92)">Cridersville Historical Society</text>
+<text x="80" y="220" font-size="30" font-family="Arial" fill="rgba(255,255,255,.85)">Replace assets/hero.svg with a real historic photo</text>
+</svg>
