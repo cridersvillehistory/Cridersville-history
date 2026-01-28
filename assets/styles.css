@@ -36,3 +36,16 @@ ul{margin:10px 0 0 18px}
   line-height: 1.5;
   max-width: 650px;
 }
+/* FIX: Homepage welcome paragraph too large */
+.hero p {
+  font-size: 1rem !important;
+  line-height: 1.55;
+  font-weight: normal;
+  max-width: 720px;
+}
+
+/* If the welcome text is accidentally inside a heading */
+.hero h1 + p {
+  font-size: 1rem !important;
+  font-weight: normal;
+}
